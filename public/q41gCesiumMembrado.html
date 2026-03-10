@@ -258,13 +258,13 @@ function addMovie() {
 
 function deleteMovie(title) {
 
-    let confirmation = confirm("Are you sure you want to delete this movie?");
+    let confirmation = confirm("Are you sure you want to delete this movie?"); // CONFIRMATION DIALOG
 
     if (confirmation) {
 
         let movies = JSON.parse(localStorage.getItem("movies")) || [];
 
-        movies = movies.filter(movie => movie.title !== title);
+        movies = movies.filter(movie => movie.title !== title); // REMOVE MOVIE FROM LOCAL STORAGE
 
         localStorage.setItem("movies", JSON.stringify(movies));
 
@@ -294,7 +294,7 @@ function displayMovies() {
             <strong>${movie.title}</strong> (${movie.year}) - ${movie.genre}<br>
             Rating: <span class="rating-stars">${starsDisplay}</span>
             <br><br>
-            <button onclick="deleteMovie('${movie.title}')">Delete</button>
+            <button onclick="deleteMovie('${movie.title}')">Delete</button> 
         `;
 
         movieList.appendChild(div);
