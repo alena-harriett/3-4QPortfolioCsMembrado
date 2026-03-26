@@ -1,17 +1,23 @@
-
-
 # Seatwork 2 - Getting to know CSS Position and z-index
 ## Step 1 (Static vs Relative)
-#### What changed compared to the default static positioning? Try to give different values to top and left or you can change it to bottom, right.
+###### What changed compared to the default static positioning? Try to give different values to top and left or you can change it to bottom, right.
+
+#### The element still takes up its original space in the layout, but you can visually shift it from that position using top, left, right, or bottom.
 
 ## Step 2 (Fixed)
-#### Guided Question: What happens when you scroll the page? Why does the footer behave differently from position relative?
+###### Guided Question: What happens when you scroll the page? Why does the footer behave differently from position relative?
+
+#### It will remain at the bottom of the viewport, ensuring it stays visible during scrolling. This behavior is different from position relative, as the footer will not move with the rest of the content as the page scrolls.
 
 ## Step 3 (Absolute)
-#### Guided Question: What is the effect of position: absolute on an element? How is it different from fixed?
+###### Guided Question: What is the effect of position: absolute on an element? How is it different from fixed?
+
+#### This will position .content relative to its nearest positioned ancestor (or the document body if none exists) and remove it from the normal document flow. Unlike fixed, which stays in place relative to the viewport during scrolling, absolute elements move when their containing block scrolls.
 
 ## Step 4 : (Absolute)
-#### Guided Question: Why does the notice appear on top of the content? What happens if you swap the z‑index values?
+###### Guided Question: Why does the notice appear on top of the content? What happens if you swap the z‑index values?
+
+#### 
 
 ## Challenge:
 
