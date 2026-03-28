@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Alena Harriett Membrado" />
+  <title>Nlogonia - Division System</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#table">Table</a>
+      <a href="#input">Input</a>
+      <a href="#output">Output</a>
+      <a href="errorlogs.html">Error Logs</a>
+    </nav>
+    <h1 style="padding: 60px 30px 30px 30px">Alena Harriett Membrado / Cesium - Mar 2026</h1>
+    <h2 id="start">Nlogonia Division</h2>
+  </header>
+
+  <section id="table">
+    <table> 
+      <tr class="rColor"><th>input</th><th>output</th></tr>
+      <tr><td>2 1 10 10</td><td>NE</td></tr>
+      <tr><td>2 1 -10 1</td><td>divisa</td></tr>
+      <tr><td>2 1 0 33</td><td>NO</td></tr>
+      <tr class="rColor"><td colspan="2">Current Live Input</td></tr>
+      <tr><td id="in1">0 0 0 0</td><td id="out1">divisa</td></tr>
+    </table>
+  </section>
+  
+  <section id="input">
+    <h2>Input</h2>
+    <h4>Axis Reference (N, M):</h4>
+    <input type="number" id="x0" value="0"> <input type="number" id="y0" value="0">
+    <h4>Residence Coordinates (X, Y):</h4>
+    <input type="number" id="x" value="0"> <input type="number" id="y" value="0">
+    <br><br>
+    <button onclick="plotPoint()">Plot Point</button>
+  </section>
+  
+  <section id="output">
+    <h2>Output Map</h2>
+    <div id="coordinatePlane">
+        <div id="xAxis" class="axis"></div>
+        <div id="yAxis" class="axis"></div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://facebook.com"><div class="icon facebook"></div></a>
+    <a href="https://twitter.com"><div class="icon twitter"></div></a>
+    <a href="https://github.com"><div class="icon github"></div></a>
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+</html>

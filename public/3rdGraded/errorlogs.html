@@ -1,0 +1,60 @@
+<tr>
+        <td> 1 </td> 
+        <td> JS Line 1 </td> 
+        <td> The function is missing the parameters needed to receive the HTML input values. </td>
+        <td> Added the parameters: <code>function plotPoint(x0, y0, x, y) {</code> </td>
+      </tr>
+      <tr>
+        <td> 2 </td> 
+        <td> JS Line 7 </td> 
+        <td> Invalid CSS property syntax for setting the left position. </td>
+        <td> Changed <code>point.styleleft</code> to <code>point.style.left</code> </td>
+      </tr>
+      <tr>
+        <td> 3 </td> 
+        <td> JS Line 8 </td> 
+        <td> Invalid CSS property syntax for setting the bottom position. </td>
+        <td> Changed <code>point.stylebottom</code> to <code>point.style.bottom</code> </td>
+      </tr>
+      <tr>
+        <td> 4 </td> 
+        <td> JS Line 25 </td> 
+        <td> Missing a closing brace to finish the <code>plotPoint</code> function block. </td>
+        <td> Added a closing <code>}</code> at the very bottom of the JS file. </td>
+      </tr>
+      <tr>
+        <td> 5 </td> 
+        <td> JS Lines 3 & 12-21 </td> 
+        <td> Directly using HTML IDs (in1, out1) as variables is a bad practice and can cause scope errors. </td>
+        <td> Wrapped them in standard DOM selectors: <code>document.getElementById('out1').innerHTML</code> </td>
+      </tr>
+      <tr>
+        <td> 6 </td> 
+        <td> CSS Line 22 </td> 
+        <td> The <code>nav</code> does not meet the requirement to stay fixed on the first line when scrolling. </td>
+        <td> Added <code>position: fixed;</code> and <code>top: 0;</code> to the <code>nav</code> ruleset. </td>
+      </tr>
+      <tr>
+        <td> 7 </td> 
+        <td> CSS Line 28 </td> 
+        <td> <code>nav a</code> uses <code>display: block;</code>, which forces links onto separate lines. </td>
+        <td> Changed to <code>display: inline-block;</code> so the links sit perfectly on one line. </td>
+      </tr>
+      <tr>
+        <td> 8 </td> 
+        <td> CSS Line 34 </td> 
+        <td> The pseudo-class syntax has a space (<code>nav a :hover</code>), targeting descendants instead of the link itself. </td>
+        <td> Removed the space to correctly format it as <code>nav a:hover</code>. </td>
+      </tr>
+      <tr>
+        <td> 9 </td> 
+        <td> CSS Line 45 </td> 
+        <td> The <code>.point</code> class lacks absolute positioning, rendering the JS left/bottom calculations useless. </td>
+        <td> Added <code>position: absolute;</code> to the <code>.point</code> ruleset. </td>
+      </tr>
+      <tr>
+        <td> 10 </td> 
+        <td> CSS Lines 7-9 </td> 
+        <td> Declaring <code>font-family</code> three separate times causes the last one to overwrite the others. </td>
+        <td> Combined them into a single fallback chain: <code>font-family: 'Roboto', 'Poppins', 'Open Sans', sans-serif;</code> </td>
+      </tr>
